@@ -285,11 +285,11 @@ if [ "$download_720p_native_models" == "true" ]; then
 fi
 
 # Download Wan Animate model
-if [ "$download_wan_animate" == "true" ]; then
-  echo "Downloading Wan Animate model..."
+# if [ "$DOWNLOAD_WAN_ANIMATE" == "true" ]; then
+#   echo "Downloading Wan Animate model..."
 
-  download_model "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/diffusion_models/wan2.2_animate_14B_bf16.safetensors" "$DIFFUSION_MODELS_DIR/wan2.2_animate_14B_bf16.safetensors"
-fi
+download_model "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/diffusion_models/wan2.2_animate_14B_bf16.safetensors" "$DIFFUSION_MODELS_DIR/wan2.2_animate_14B_bf16.safetensors"
+# fi
 
 # Download Steady Dancer model
 if [ "$download_steady_dancer" == "true" ]; then
